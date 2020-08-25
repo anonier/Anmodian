@@ -1,0 +1,319 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\yb.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""l.CHS\\afxres.rc""      // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\yb.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 mypcmanager"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,21,20
+    LTEXT           "mypcmanager，1.0 版",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2019",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "确定",IDOK,113,41,50,14,WS_GROUP
+END
+
+IDD_MYPCMANAGER_DIALOG DIALOGEX 0, 0, 597, 311
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "技师"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "用户名：",IDC_STATIC,26,23,35,12
+    LTEXT           "金额：",IDC_STATIC,142,25,35,12
+    LTEXT           "ID：",IDC_STATIC,26,53,35,12
+    EDITTEXT        IDC_EDIT_MYNAME,61,23,61,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_NO,62,51,61,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_LIST_STUDENT,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,35,94,252,174
+    PUSHBUTTON      "数据同步",ID_NET,351,290,50,14
+    PUSHBUTTON      "增加",IDC_BUTTON_ADD,19,290,50,14
+    PUSHBUTTON      "删除",IDDELL,85,290,50,14
+    PUSHBUTTON      "查询",IDC_BUTTON_SEL,218,290,50,14
+    LTEXT           "静态：",IDC_BUT_AUTOCONN,94,74,85,12
+    EDITTEXT        IDC_EDIT_MO,185,25,61,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "刷新",IDC_BUTTON_FLASH,286,290,50,14
+    PUSHBUTTON      "修改",IDC_BUTTON_update,150,290,50,14
+    LTEXT           "操作：",IDC_STATIC,142,51,35,12
+    EDITTEXT        IDC_EDIT_OP,185,49,61,14,ES_AUTOHSCROLL
+    LTEXT           "COM PORT:",IDC_STATIC,315,55,38,8
+    LTEXT           "BAUD:",IDC_STATIC,454,57,21,8
+    LTEXT           "Serial Number:",IDC_STATIC,308,106,46,8
+    LTEXT           "KEY:",IDC_STATIC,323,159,16,8
+    CONTROL         "KEY A",IDC_RADIO_KEYA,"Button",BS_AUTORADIOBUTTON,458,155,35,10
+    CONTROL         "KEY B",IDC_RADIO_KEY2,"Button",BS_AUTORADIOBUTTON,459,198,35,10
+    LTEXT           "BLOCK(0-63):",IDC_STATIC,314,205,44,8
+    LTEXT           "DATA:",IDC_STATIC,323,241,22,8
+    PUSHBUTTON      "REQUEST",IDC_BUTTON_SEARCH,539,176,50,14
+    PUSHBUTTON      "READ",IDC_BUTTON_READ,539,213,50,14
+    PUSHBUTTON      "HALT",IDC_BUTTON_HALT,539,290,50,14
+    PUSHBUTTON      "WRITE",IDC_BUTTON_WRITE,539,251,50,14
+    COMBOBOX        IDC_COMBO_PORT,362,54,78,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_RAUD,482,55,86,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_MASS,366,202,78,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_SERIAL,365,104,171,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DATA,365,237,110,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_KEY,361,157,61,14,ES_AUTOHSCROLL
+    CTEXT           "用户卡操作界面",IDC_STATIC,390,21,123,19,SS_CENTERIMAGE
+END
+
+IDD_LOAD DIALOGEX 0, 0, 253, 160
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "登录对话框"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,20,110,59,15
+    PUSHBUTTON      "取消",IDCANCEL,97,110,59,15
+    EDITTEXT        IDC_EDIT1,89,21,97,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,89,43,97,15,ES_AUTOHSCROLL
+    LTEXT           "用户名",IDC_STATIC,52,22,26,9
+    LTEXT           "密码",IDC_STATIC,55,46,17,9
+    PUSHBUTTON      "修改密码",IDC_EDITPW,175,110,59,15
+    CONTROL         "管理员",IDC_MA,"Button",BS_AUTORADIOBUTTON,73,75,40,10
+    CONTROL         "技师",IDC_JI,"Button",BS_AUTORADIOBUTTON,137,75,32,10
+END
+
+IDD_MANAGER DIALOGEX 0, 0, 402, 311
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "管理员"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "技师：",IDC_STATIC,26,23,35,12
+    LTEXT           "金额：",IDC_STATIC,142,25,35,12
+    LTEXT           "ID：",IDC_STATIC,26,53,35,12
+    EDITTEXT        IDC_EDIT_JISHINAME,61,23,61,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_JISHINO,62,51,61,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_LIST_JISHI,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,73,81,252,174
+    PUSHBUTTON      "数据同步",IDC_JISHINET,345,290,50,14
+    PUSHBUTTON      "增加",IDC_BUTTON_JISHIADD,7,290,50,14
+    PUSHBUTTON      "删除",IDC_JISHiDELL,73,290,50,14
+    PUSHBUTTON      "查询",IDC_BUTTON_JISHISEL,209,290,50,14
+    LTEXT           "静态：",IDC_BUT_AUTOCONN,285,27,85,12
+    EDITTEXT        IDC_EDIT_JISHIMO,186,22,61,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "刷新",IDC_BUTTON_JISHIFLASH,277,290,50,14
+    PUSHBUTTON      "修改",IDC_BUTTON_JISHIupdate,138,290,50,14
+    LTEXT           "密码：",IDC_STATIC,142,51,35,12
+    EDITTEXT        IDC_EDIT_JISHIPA,185,49,61,14,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "TODO: <公司名>"
+            VALUE "FileDescription", "TODO: <文件说明>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "mypcmanager.exe"
+            VALUE "LegalCopyright", "TODO: (C) <公司名>。保留所有权利。"
+            VALUE "OriginalFilename", "mypcmanager.exe"
+            VALUE "ProductName", "TODO: <产品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_MYPCMANAGER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 589
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 304
+    END
+
+    IDD_LOAD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 246
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 153
+    END
+
+    IDD_MANAGER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 395
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 304
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// HTML
+//
+
+IDR_HTML_DLGLOAD        HTML                    "DlgLoad.htm"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_MYPCMANAGER_DIALOG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_LOAD AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_MANAGER AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_ABOUTBOX            "关于 mypcmanager(&A)..."
+END
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\yb.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "l.CHS\afxres.rc"      // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
